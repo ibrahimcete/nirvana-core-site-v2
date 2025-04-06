@@ -1,0 +1,31 @@
+:root{
+    --nc-primary:#ff4081;
+    --nc-secondary:#00bcd4;
+    --nc-dark:#111;
+  }
+  body{
+    background:var(--nc-dark);
+    color:#fff;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    scroll-behavior:smooth;
+  }
+  /* Navbar */
+  .navbar{backdrop-filter:blur(10px);background:rgba(0,0,0,.6)}
+  .nav-link{color:#fff!important}
+  .nav-link:hover{color:var(--nc-primary)!important}
+  /* Hero */
+  #hero{
+    min-height:90vh;
+    display:flex;align-items:center;justify-content:center;
+    background:url('https://images.unsplash.com/photo-1527443224154-65cbdc2fa5d4?auto=format&fit=crop&w=1950&q=80') center/cover fixed;
+    text-align:center;position:relative;
+  }
+  #hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}
+  #hero .content{position:relative;z-index:2}
+  .btn-gradient{background:linear-gradient(45deg,var(--nc-primary),var(--nc-secondary));border:none}
+  /* Cards */
+  .card{background:#1f1f1f;border:none;border-radius:20px;color:#fff;transition:.3s}
+  .card:hover{transform:translateY(-8px);box-shadow:0 0 20px rgba(0,188,212,.4)}
+  .section-title{color:var(--nc-primary)}
+  footer{background:#000;padding:40px 0}
+  
